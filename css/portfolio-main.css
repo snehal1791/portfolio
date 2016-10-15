@@ -1,0 +1,120 @@
+
+* {
+  outline: 1px solid red !important;
+}
+body {
+  font-family: "Cormorant Upright", serif;
+}
+
+.h3-color {
+  color: #0f74a7;
+}
+
+.top {
+  margin: 10px 0px 10px 0px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #556371;
+}
+
+.profile-logo {
+  border: 5px solid;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #31708f;
+  font-size: 4em;
+  margin-right: auto;
+}
+
+.horizontal-line {
+  border: 0;
+  height: 1px;
+  background: #444;
+  background-image: linear-gradient(to right, #cdd, #444, #cdd);
+}
+
+.project-image {
+  border-radius: 2px;
+  box-shadow:  0 0 0.9em 0.2em rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.container{
+  max-width: 100%;
+}
+
+.social {
+  display: inline-block;
+}
+
+.btn-format {
+  border: 1px solid #15acda;
+  background-color: #0bb0ef;
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 3px 15px 3px 15px;
+}
+
+.modal-para {
+  padding: 0 10px 0 10px;
+  text-align: justify;
+  font-size: 16px;
+
+}
+
+.modal-image {
+  border: 0.5px solid #ddd;
+  border-radius: 5px;
+}
+
+#modal-footer {
+  text-align: center;
+}
+
+.list-align {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-marker {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 15px;
+  color: #17d1f1;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 551px) and (max-width: 992px) {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center {
+    text-align: center;
+  }
+}
