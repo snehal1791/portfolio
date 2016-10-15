@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--setting the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Snehal Parate</title>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant+Upright:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/portfolio-main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/5528df7a5f.js"></script>
+  </head>
+
+  <body>
+    <!--header of the portfolio, profile picture and name-->
+    <header class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="profile-logo top logo">SP</p>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="center">Snehal Parate</h1>
+          <h4 class="center">Front-End Developer</h4>
+        </div>
+      </div>
+      <hr class="horizontal-line">
+    </header>
+
+    <!--projects done so far -->
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">About Me</h2>
+        </div>
+        <div class="col-md-12">
+          <p class="text-center about-text">Hi! I am Snehal Parate a Front-End Developer.</p>
+        </div>
+      </div>
+      <hr class="horizontal-line">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Projects</h2>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="text-center h3-color">Movie Trailor</h3>
+          <img alt="movie trailor image" class="img-responsive project-image" src="images/movie_trailor-large.jpg" data-toggle="modal" data-target="#projectmovie">
+          <ul class="list-align">
+            <li class="list-marker">Python</li>
+            <li class="list-marker">HTML</li>
+            <li class="list-marker">CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center h3-color">Interactive Resume</h3>
+          <img alt="project2 image" class="img-responsive project-image" src="images/resume-large.jpg" data-toggle="modal" data-target="#projectresume">
+          <ul class="list-align">
+            <li class="list-marker">JavaScript</li>
+            <li class="list-marker">jQuery</li>
+            <li class="list-marker">HTML</li>
+            <li class="list-marker">CSS</li>
+            <li class="list-marker">Google API</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center h3-color">Feed Reader Testing</h3>
+          <img alt="project3 image" class="img-responsive project-image" src="images/feed_reader-large.jpg" data-toggle="modal" data-target="#projectfeedreader">
+          <ul class="list-align">
+            <li class="list-marker">JavaScript</li>
+            <li class="list-marker">Jasmine</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="horizontal-line">
+    </section>
+
+    <!--contact me section-->
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Contact Me</h2>
+          <hr class="horizontal-line">
+          <div class="row text-center">
+            <a href="https://www.linkedin.com/in/snehalparate17">
+              <i class="fa fa-linkedin-square fa-4x"></i>
+            </a>
+
+            <a href="https://github.com/snehal1791">
+              <i class="fa fa-github fa-4x"></i>
+            </a>
+
+            <a href="https://twitter.com/sne_hal_p">
+              <i class="fa fa-twitter-square fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="projectmovie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center" id="myModalLabel">Movie Trailor</h2>
+          </div>
+          <div class="modal-body text-center">
+            <img class="img-responsive modal-image" src="images/movie_trailor.jpg">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This was my first project in this class. I learned a lot about HTML and CSS.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/movie-trailer/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/movie-trailer">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="projectresume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+              <h2 class="modal-title" id="myModalLabel">Interactive Resume</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/resume.jpg">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This project is the part of Udacity Front-End Web Developer Nanodegree program. The project aimed at building an Interactive Resume using JavaScript.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/resume/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/resume">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectfeedreader" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center" id="myModalLabel">Feed Reader Testing</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/feed_reader.jpg">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This was my first project in this class. I learned a lot about HTML and CSS.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/feed-reader-testing/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/feed-reader-testing">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
