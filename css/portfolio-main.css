@@ -1,7 +1,7 @@
 
-* {
+/** {
   outline: 1px solid red !important;
-}
+}*/
 body {
   font-family: "Cormorant Upright", serif;
 }
@@ -70,6 +70,7 @@ body {
 .modal-image {
   border: 0.5px solid #ddd;
   border-radius: 5px;
+  margin: auto;
 }
 
 #modal-footer {
@@ -88,7 +89,7 @@ body {
 .list-marker {
   list-style-type: none;
   padding: 5px;
-  font-size: 15px;
+  font-size: 18px;
   color: #17d1f1;
   font-weight: 600;
 }
@@ -102,7 +103,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 @media screen and (min-width: 551px) and (max-width: 992px) {
