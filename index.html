@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/portfolio-main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:600" rel="stylesheet">
   </head>
-
   <body>
     <!--header of the portfolio, profile picture and name-->
     <header class="container">
@@ -25,7 +24,6 @@
       </div>
       <hr class="horizontal-line">
     </header>
-
     <!--projects done so far -->
     <section class="container">
       <div class="row">
@@ -54,7 +52,7 @@
         </div>
         <div class="col-md-6">
           <h3 class="text-center h3-color">Interactive Resume</h3>
-          <img alt="project2 image" class="img-responsive project-image" src="images/resume-large.JPG" data-toggle="modal" data-target="#projectresume">
+          <img alt="interactive resume image" class="img-responsive project-image" src="images/resume-large.JPG" data-toggle="modal" data-target="#projectresume">
           <ul class="list-align">
             <li class="list-marker">JavaScript</li>
             <li class="list-marker">jQuery</li>
@@ -63,9 +61,11 @@
             <li class="list-marker">Google's API</li>
           </ul>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
           <h3 class="text-center h3-color">Feed Reader Testing</h3>
-          <img alt="project3 image" class="img-responsive project-image" src="images/feed_reader-large.JPG" data-toggle="modal" data-target="#projectfeedreader">
+          <img alt="feed reader testing image" class="img-responsive project-image" src="images/feed_reader-large.JPG" data-toggle="modal" data-target="#projectfeedreader">
           <ul class="list-align">
             <li class="list-marker">JavaScript</li>
             <li class="list-marker">Jasmine</li>
@@ -73,8 +73,46 @@
           </ul>
         </div>
         <div class="col-md-6">
+          <h3 class="text-center h3-color">Arcade Game</h3>
+          <img alt="arcade game image" class="img-responsive project-image" src="images/arcade_game-large.JPG" data-toggle="modal" data-target="#projectarcade">
+          <ul class="list-align">
+            <li class="list-marker">JavaScript</li>
+            <li class="list-marker">Object-Oriented Programming</li>
+            <li class="list-marker">HTML5 Canvas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center h3-color">Neighborhood Map</h3>
+          <img alt="neighborgood map image" class="img-responsive project-image" src="images/neighborhood_map-large.JPG" data-toggle="modal" data-target="#projectneighborhoodmap">
+          <ul class="list-align">
+            <li class="list-marker">JavaScript Frameworks</li>
+            <li class="list-marker">Knockout</li>
+            <li class="list-marker">Ajax</li>
+            <li class="list-marker">JavaScript</li>
+            <li class="list-marker">HTML</li>
+            <li class="list-marker">CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-center h3-color">Website Performance Optimization</h3>
+          <img alt="website performance optimization image" class="img-responsive project-image" src="images/website_optimization-large.JPG" data-toggle="modal" data-target="#projectoptimization">
+          <ul class="list-align">
+            <li class="list-marker">HTML</li>
+            <li class="list-marker">CSS</li>
+            <li class="list-marker">Chrome Developer Tools</li>
+            <li class="list-marker">Critical Rendering Path</li>
+            <li class="list-marker">60fps Rendering</li>
+            <li class="list-marker">Grunt</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
           <h3 class="text-center h3-color">Portfolio</h3>
-          <img alt="project3 image" class="img-responsive project-image" src="images/portfolio-large.JPG" data-toggle="modal" data-target="#projectportfolio">
+          <img alt="portfolio image" class="img-responsive project-image" src="images/portfolio-large.JPG" data-toggle="modal" data-target="#projectportfolio">
           <ul class="list-align">
             <li class="list-marker">HTML</li>
             <li class="list-marker">CSS</li>
@@ -82,6 +120,7 @@
             <li class="list-marker">Grunt</li>
           </ul>
         </div>
+        <div class="col-md-3"></div>
       </div>
       <hr class="horizontal-line">
     </section>
@@ -196,7 +235,7 @@
             <img class="img-responsive modal-image" alt="feed reader testing modal image" src="images/portfolio-small.JPG">
             <hr class="horizontal-line">
             <p class="modal-para">
-              This project is part of the Udacity  Front-End Web Developer Nanodegree Program. The project is about developing and building a personalized portfolio site. In this project I have developed the webpage using HTML5, CSS and Bootstrap framework. The design of the website is responsive and displays the images, description and links to the projects I have completed so far. Further, I made use of Grunt - The JavaScript Task Runner to create images of different sizes and minify .css and .js files.
+              This project is part of the Udacity  Front-End Web Developer Nanodegree Program. The project is about developing and building a personalized portfolio site. In this project I have developed the webpage using HTML, CSS and Bootstrap framework. The design of the website is responsive and displays the images, description and links to the projects I have completed so far. Further, I made use of Grunt - The JavaScript Task Runner to create images of different sizes and minify .css and .js files.
             </p>
           </div>
           <div id="modal-footer" class="modal-footer">
@@ -211,10 +250,88 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="projectneighborhoodmap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center">Neighborhood Map</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" alt="feed reader testing modal image" src="images/neighborhood_map-small.JPG">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This project is part of the Udacity Front-End Web Developer Nanodegree program. I developed and implemented this project using Knockout framework, that displays my favorite places on Google Map. The application has an ability to filter location as user types-in in the search bar. The project also makes use of FourSquare API to display additional information about a landmark.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/Neighborhood-Map/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/Neighborhood-Map">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectoptimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center">Website Performance Optimization</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" alt="feed reader testing modal image" src="images/website_optimization-small.JPG">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This project is part of the Udacity Front-End Web Developer Nanodegree program. In this project I have optimized inefficient websites provided in the course to achieve PageSpeed score of 90 or more and ensured that the webpage runs at 60fps. This was achieved by optimizing JavaScript, CSS as well as web application's assets delivery.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/Website-Optimization/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/Website-Optimization">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectarcade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center">Arcade Game</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" alt="arcade game modal image" src="images/arcade_game-small.JPG">
+            <hr class="horizontal-line">
+            <p class="modal-para">
+              This project is part of the Udacity Front-End Web Developer Nanodegree program. The course provided visual assets and game loop engine. I developed the functionalities of this game using HTML5 Canvas and Object-Oriented Programming concepts.
+            </p>
+          </div>
+          <div id="modal-footer" class="modal-footer">
+            <a href="https://snehal1791.github.io/arcade-game/">
+              <button class="btn-format" type="button">Project</button>
+            </a>
+            <a href="https://github.com/snehal1791/arcade-game">
+              <button class="btn-format" type="button">GitHub</button>
+            </a>
+            <button type="button" class="btn btn-default btn-format" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/5528df7a5f.js"></script>
+    <script async src="https://use.fontawesome.com/5528df7a5f.js"></script>
   </body>
   </html>
