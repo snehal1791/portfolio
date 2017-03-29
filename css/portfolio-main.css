@@ -10,24 +10,23 @@ body {
   color: #0f74a7;
 }
 
-.top {
-  margin: 10px 0px 10px 0px;
-}
-
 .about-text {
   font-size: 18px;
   color: #556371;
 }
 
-.profile-logo {
-  border: 5px solid;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  color: #31708f;
-  font-size: 4em;
-  margin-right: auto;
+.profile-image {
+  width: 190px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.heading-name {
+  font-size: 55px;
+}
+
+.heading-subtitle {
+  font-size: 28px;
 }
 
 .horizontal-line {
@@ -94,27 +93,30 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 550px) {
-  img {
-    display: block;
-    margin: 0 auto;
+@media (max-width: 550px) and (min-width: 0px){
+  .heading-name {
+    text-align: center;
+    font-size: 35px;
   }
-  .logo {
+  .heading-subtitle {
+    text-align: center;
+    font-size: 18px;
+  }
+  .profile-image {
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (min-width: 551px) and (max-width: 992px) {
-  img {
-    display: block;
-    margin: 0 auto;
+@media (max-width: 1000px) and (min-width: 551px){
+  .heading-name,
+  .heading-subtitle {
+    text-align: center;
   }
-  .logo {
+  .profile-image {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  .center {
-    text-align: center;
   }
 }
