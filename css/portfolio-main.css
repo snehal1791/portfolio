@@ -59,7 +59,7 @@ body {
   padding: 3px 15px 3px 15px;
 }
 
-.contact-header {
+.contact-header:hover {
   /*color: #333;*/
   text-decoration: none;
 }
