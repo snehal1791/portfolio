@@ -60,7 +60,8 @@ body {
 }
 
 .contact-header {
-  color: #333;
+  /*color: #333;*/
+  text-decoration: none;
 }
 .modal-para {
   padding: 0 10px 0 10px;
