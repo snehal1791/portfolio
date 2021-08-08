@@ -2,18 +2,47 @@
 /** {
   outline: 1px solid green !important;
 }*/
+html {
+  --header-color: rgb(51, 51, 51);
+  --project-skills: #D756F0;
+  /* --project-title: #8e0fa7; */
+  --project-title: #6c0b80;
+  --heading-name: #41074d;
+  --button-color: #337ab7;
+  --button-color-hover:#23527c;
+  --old-about-text-color: #556371;
+  --section-details-color: #8e0fa7;
+  --section-details-color-darker: #6c0b80;
+}
 body {
   font-family: "Cormorant Upright", serif;
 }
 
+.heading-name {
+  font-size: 55px;
+  color: var(--heading-name)
+}
+
+.heading-subtitle {
+  font-size: 28px;
+  color: var(--project-title)
+}
+h2 {
+  color: var(--heading-name);
+}
+
 .h3-color {
-  color: #0f74a7;
+  color: var(--project-title);
 }
 
 .about-text {
   font-size: 18px;
-  color: #556371;
+  color: var(--section-details-color);
+  
 }
+/* .about-text.bold-text {
+  color: var(--section-details-color-darker);
+} */
 
 .profile-image {
   width: 190px;
@@ -21,19 +50,12 @@ body {
   margin-top: 15px;
 }
 
-.heading-name {
-  font-size: 55px;
-}
-
-.heading-subtitle {
-  font-size: 28px;
-}
-
 .horizontal-line {
   border: 0;
   height: 1px;
-  background: #444;
-  background-image: linear-gradient(to right, #cdd, #444, #cdd);
+  /* background: #444; */
+  background: var(--project-title);
+  background-image: linear-gradient(to right, #cdd, var(--project-title), #cdd);
 }
 
 .project-image {
@@ -51,23 +73,36 @@ body {
 }
 
 .btn-format {
-  border: 1px solid #15acda;
-  background-color: #0bb0ef;
+  border: 0;
+  background-color: var(--button-color);
   color: aliceblue;
   border-radius: 5px;
   font-size: 18px;
   padding: 3px 15px 3px 15px;
 }
 
+.btn-format:hover {
+  /* border: 1px solid #15acda; */
+  background-color: var(--button-color-hover);
+}
+
 .contact-header:hover {
   /*color: #333;*/
   text-decoration: none;
+}
+.made-with {
+  font-weight: 700;
+  color: var(--section-details-color);
+}
+
+.modal-title {
+  color: var(--project-title);
 }
 .modal-para {
   padding: 0 10px 0 10px;
   text-align: justify;
   font-size: 16px;
-
+  color: var(--section-details-color);
 }
 
 .modal-image {
@@ -93,8 +128,13 @@ body {
   list-style-type: none;
   padding: 5px;
   font-size: 18px;
-  color: #17d1f1;
+  color: var(--project-skills);
   font-weight: 600;
+}
+
+.text-message {
+  font-size: 1.6rem;
+  color: var(--project-skills);
 }
 
 @media (max-width: 550px) and (min-width: 0px){
